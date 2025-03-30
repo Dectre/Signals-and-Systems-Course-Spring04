@@ -1,0 +1,12 @@
+clc, clearvars;
+figure;
+t = 0:0.001:2 * pi;
+plot(t, sin(t));
+hold on;
+plot(t, cos(t),"LineStyle","--", "Color","Red");
+xlabel("time");
+ylabel("value");
+title("sine and cosine wave over one period");
+legend("sin", "cos");
+xlim([0, 2*pi]);
+ylim([-1.4, 1.4]);
